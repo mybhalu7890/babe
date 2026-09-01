@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Ankit ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- LOADING SCREEN -->
+
+    <div id="loadingScreen">
+
+        <div class="loading-heart">❤️</div>
+
+        <h2>something special is waiting...</h2>
+
+        <p>for Ankit ♡</p>
+
+    </div>
+
+
+    <!-- MUSIC -->
+
+    <audio id="backgroundMusic" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button">
+        ♫
+    </button>
+
+
+    <!-- FLOATING HEART CONTAINER -->
+
+    <div id="heartsContainer"></div>
+
+
+    <!-- MAIN WEBSITE -->
+
+    <main id="mainContent">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="stars"></div>
+
+            <div class="hero-content">
+
+                <p class="small-text">
+                    this little corner of the internet is only for you
+                </p>
+
+                <h1>
+                    Hey Ankit
+                    <span>♡</span>
+                </h1>
+
+                <div class="line"></div>
+
+                <p class="hero-subtitle">
+                    ek choti si jagah...
+                    hum dono ke liye
+                </p>
+
+                <button class="start-button" onclick="scrollToLetter()">
+                    Read something from my heart 💌
+                </button>
+
+            </div>
+
+            <div class="scroll-indicator">
+                ↓
+            </div>
+
+        </section>
+
+
+        <!-- RELATIONSHIP COUNTER -->
+
+        <section class="together-section">
+
+            <p class="section-label">
+                OUR STORY
+            </p>
+
+            <h2>
+                aur ye kahani...
+            </h2>
+
+            <p class="story-text">
+                28/02/2018 se shuru hui thi ❤️
+            </p>
+
+            <div class="counter-container">
+
+                <div class="counter-box">
+                    <span id="years">0</span>
+                    <small>YEARS</small>
+                </div>
+
+                <div class="counter-box">
+                    <span id="months">0</span>
+                    <small>MONTHS</small>
+                </div>
+
+                <div class="counter-box">
+                    <span id="days">0</span>
+                    <small>DAYS</small>
+                </div>
+
+                <div class="counter-box">
+                    <span id="hours">0</span>
+                    <small>HOURS</small>
+                </div>
+
+                <div class="counter-box">
+                    <span id="minutes">0</span>
+                    <small>MINUTES</small>
+                </div>
+
+                <div class="counter-box">
+                    <span id="seconds">0</span>
+                    <small>SECONDS</small>
+                </div>
+
+            </div>
+
+            <p class="since-text">
+                7th class se lekar ab tak...
+                <br>
+                kitne saare moments ❤️
+            </p>
+
+        </section>
+
+
+        <!-- PHOTO SECTION -->
+
+        <section class="memories-section">
+
+            <p class="section-label">
+                OUR MEMORIES
+            </p>
+
+            <h2>
+                kuch pal...
+            </h2>
+
+            <p class="memory-intro">
+                jo photos mein hain,
+                but actually mere dil mein hain.
+            </p>
+
+
+            <div class="photo-grid">
+
+                <div class="photo-card photo-one">
+                    <img src="images/photo1.jpeg" alt="Our memory">
+                    <div class="photo-caption">
+                        <span>01</span>
+                        ek aur favourite moment ♡
+                    </div>
+                </div>
+
+
+                <div class="photo-card photo-two">
+                    <img src="images/photo2.jpeg" alt="Our memory">
+                    <div class="photo-caption">
+                        <span>02</span>
+                        bas tum aur main
+                    </div>
+                </div>
+
+
+                <div class="photo-card photo-three">
+                    <img src="images/photo3.jpeg" alt="Our memory">
+                    <div class="photo-caption">
+                        <span>03</span>
+                        ek beautiful memory
+                    </div>
+                </div>
+
+
+                <div class="photo-card photo-four">
+                    <img src="images/photo4.jpeg" alt="Our memory">
+                    <div class="photo-caption">
+                        <span>04</span>
+                        uss moment ki baat hi alag thi
+                    </div>
+                </div>
+
+
+                <div class="photo-card photo-five">
+                    <img src="images/photo5.jpeg" alt="Our memory">
+                    <div class="photo-caption">
+                        <span>05</span>
+                        you + me ♡
+                    </div>
+                </div>
+
+
+                <div class="photo-card photo-six">
+                    <img src="images/photo6.jpeg" alt="Our memory">
+                    <div class="photo-caption">
+                        <span>06</span>
+                        forever wala favourite
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LETTER INTRO -->
+
+        <section class="letter-intro">
+
+            <div class="envelope">
+                💌
+            </div>
+
+            <p class="section-label">
+                A LETTER FOR YOU
+            </p>
+
+            <h2>
+                okay so...
+            </h2>
+
+            <p>
+                samajh nahi aa raha khn se shuruuu karu...
+            </p>
+
+            <button onclick="openLetter()" class="letter-button">
+                Open my letter ♡
+            </button>
+
+        </section>
+
+
+        <!-- LETTER -->
+
+        <section id="letterSection" class="letter-section">
+
+            <div class="letter-paper">
+
+                <div class="paper-decoration top-left">
+                    ♡
+                </div>
+
+                <div class="paper-decoration top-right">
+                    ✿
+                </div>
+
+
+                <p class="letter-to">
+                    Dear Ankit,
+                </p>
+
+
+                <!-- TYPEWRITER LETTER -->
+
+                <div id="typedLetter" class="typed-letter"></div>
+
+
+                <div class="letter-signature">
+
+                    <div class="signature-line"></div>
+
+                    <p>
+                        always yours,
+                    </p>
+
+                    <strong>
+                        ❤️
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL MESSAGE -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="big-heart">
+                    ♥
+                </div>
+
+                <p class="final-small">
+                    bas ek last baat...
+                </p>
+
+                <h2>
+                    I LOVE YOU
+                </h2>
+
+                <p class="final-message">
+                    is duniya me sabseeeeeeeeeeeeeee
+                    <br>
+                    jyadaaaaaaaaaaaaaaaaaaaaaa
+                </p>
+
+                <div class="infinity">
+                    ∞
+                </div>
+
+                <p class="final-note">
+                    past se leke future tak,
+                    hamesa. ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                Made with a lot of love ♡
+            </p>
+
+            <p>
+                28.02.2018 → forever
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
